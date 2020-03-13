@@ -23,6 +23,51 @@
   color: #61dafb;
 }
 
+.darkMode {
+  color: rgb(123, 155, 241);
+  background-color: #313843;
+  transition: background-color 0.25s ease-out;
+}
+
+.lightMode {
+
+}
+
+.dark-mode-toggle {
+  background: rgb(149, 147, 243);
+  border-radius: 50px;
+  border: 1px solid rgb(61, 3, 197);
+  height: 20px;
+  position: relative;
+  width: 40px;
+}
+
+.toggled {
+  left: 18px;
+}
+
+.toggle {
+  background: #194df6;
+  border-radius: 50px;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;  
+}
+
+.cardbox {
+
+}
+
+.card {
+
+}
+
+.navbar {
+  
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -9,8 +9,23 @@ const Header = () => {
   }
 
   return(
-    <nav>
+    <nav className={darkMode ? "navbar dark-mode" : "navbar light-mode"}>>
     <h1>Womens World Cup Google Stats</h1>
+    <div>
+      <span>
+      light
+      </span>
+      <div className="dark-mode-toggle">
+        <div 
+        onClick={toggleMode}>
+          className={darkMode ? 'toggle toggled' : 'toggle'}
+
+        <span>dark</span>
+        </div>
+
+      </div>
+      <span></span>
+    </div>
     </nav>
 
   )

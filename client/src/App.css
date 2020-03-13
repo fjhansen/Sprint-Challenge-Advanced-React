@@ -50,11 +50,17 @@
 }
 
 .cardbox {
-
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  flex-wrap: wrap;
+  width: 96%;
+  border: 1px solid rgb(84, 131, 185);
 }
 
 .card {
-
+  width: 26%;
+  margin: 2% 3%;
 }
 
 

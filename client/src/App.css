@@ -19,20 +19,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-.darkMode {
-  color: rgb(123, 155, 241);
-  background-color: #313843;
-  transition: background-color 0.25s ease-out;
-}
-
-.lightMode {
-
-}
-
 .dark-mode__toggle {
   background: rgb(149, 147, 243);
   border-radius: 50px;
@@ -40,10 +26,6 @@
   height: 20px;
   position: relative;
   width: 40px;
-}
-
-.toggled {
-  left: 18px;
 }
 
 .toggle {
@@ -56,6 +38,22 @@
   width: 20px;  
 }
 
+.toggled {
+  left: 18px;
+}
+
+
+.dark-mode {
+  color: rgb(123, 155, 241);
+  background-color: #313843;
+  transition: background-color 0.25s ease-out;
+}
+
+
+
+
+
+
 .cardbox {
 
 }
@@ -64,9 +62,11 @@
 
 }
 
-.navbar {
 
+.App-link {
+  color: #61dafb;
 }
+
 
 @keyframes App-logo-spin {
   from {

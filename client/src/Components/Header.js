@@ -1,31 +1,29 @@
 import React, {useState, useEffect} from "react";
+import {useDarkMode} from '../hooks/useDarkMode'
 
 const Header = () => {
   const [darkMode, setDarkMode] = useDarkMode(false);
 
   const toggleMode = e => {
     e.preventDefault();
-    setDarkMorde(!darkmode);
+    setDarkMode(!darkMode);
   }
 
   return(
-    <nav className={darkMode ? "navbar dark-mode" : "navbar light-mode"}>>
+    <nav className={darkMode ? "navbar dark-mode" : "navbar light-mode"}>
     <h1>Womens World Cup Google Stats</h1>
-    <div>
-      <span>
-      light
-      </span>
-      <div className="dark-mode-toggle">
-        <div 
-        onClick={toggleMode}>
-          className={darkMode ? 'toggle toggled' : 'toggle'}
-
-        <span>dark</span>
+    <div style={{display: 'flex', flexDirection:'row', justifyContent: 'space-evenly', alignItems: 'center', margin: '2%'}}>
+    <span style={{color: darkMode ? "grey" : "orange", fontSize:'3em' ,marginLeft: '-60%'}}>☼</span>
+      <div className="dark-mode__toggle">
+      <div
+            onClick={toggleMode}
+            className={darkMode ? 'toggle toggled' : 'toggle'}
+            
+            
+          />
         </div>
-
-      </div>
-      <span></span>
-    </div>
+        <span style={{color: darkMode ? "purple" : "grey", fontSize:'3em', marginRight: '-60%'}}>☾</span>
+        </div>
     </nav>
 
   )

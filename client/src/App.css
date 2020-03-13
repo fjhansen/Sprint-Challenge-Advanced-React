@@ -33,7 +33,7 @@
 
 }
 
-.dark-mode-toggle {
+.dark-mode__toggle {
   background: rgb(149, 147, 243);
   border-radius: 50px;
   border: 1px solid rgb(61, 3, 197);
@@ -65,7 +65,7 @@
 }
 
 .navbar {
-  
+
 }
 
 @keyframes App-logo-spin {

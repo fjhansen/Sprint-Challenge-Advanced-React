@@ -10,9 +10,26 @@ class PlayerCard extends Component{
       this.props.players.map(player => {
         return(
           <Card key={player.id} body outline color="primary">
-          <CardTitle>Special Title Treatment</CardTitle>
-          <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-          <Button color="secondary">Button</Button>
+          <CardTitle><h3 className="display-4">{player.name}</h3></CardTitle>
+
+          <CardText>
+              <p 
+              style={{textAlign:'center', fontSize:'2em'}} 
+              className="lead text-muted">
+                {player.country}
+              </p>
+          </CardText>
+
+          <div style={{display: 'flex', flexWrap:'wrap', justifyContent: 'flex-end'}}>
+
+          <h2>{player.searches}</h2>
+
+          {/* image? */}
+
+
+
+        </div>
+          
         </Card>
         )
       })

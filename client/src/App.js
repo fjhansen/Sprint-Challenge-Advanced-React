@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import PlayerCard from './Components/PlayerCard';
+import Header from './Components/Header';
+
 
 import './App.css';
 
@@ -28,7 +31,11 @@ class App extends Component {
   render(){
     return(
       <div className="main">
-        <h1>{this.state.message}</h1>
+        {/* <h1>{this.state.message}</h1> */}
+        <Header/>
+        <div className="cardbox">
+        <PlayerCard players={this.state.players}/>
+        </div>
       </div>
     )
   }

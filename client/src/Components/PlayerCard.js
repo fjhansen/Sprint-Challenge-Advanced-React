@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import {
-  Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button
+  Card, CardText,
+  CardTitle
 } from 'reactstrap';
+
+import IMG from './search-128.png'
 
 class PlayerCard extends Component{
   render() {
@@ -23,6 +25,8 @@ class PlayerCard extends Component{
           <div style={{display: 'flex', flexWrap:'wrap', justifyContent: 'flex-end'}}>
 
           <h2>{player.searches}</h2>
+
+          <img style={{width: '40px', height: '40px'}} src={IMG}/>
 
           {/* image? */}
 

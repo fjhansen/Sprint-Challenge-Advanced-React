@@ -13,7 +13,7 @@ const Header = () => {
     <nav style={{display: 'flex', flexDirection:'column'}} className={darkMode ? "navbar dark-mode" : "navbar light-mode"}>
     <h1 >Womens World Cup Google Stats</h1>
     <div style={{display: 'flex', flexDirection:'row', justifyContent: 'space-evenly', alignItems: 'center', margin: '2%'}}>
-    <span style={{color: darkMode ? "grey" : "orange", fontSize:'3em' ,marginLeft: '-60%'}}>☼</span>
+    <span data-testid="span" style={{color: darkMode ? "grey" : "orange", fontSize:'3em' ,marginLeft: '-60%'}}>☼</span>
     <div className="dark-mode__toggle" style={{}}>
       
       <div

@@ -1,6 +1,12 @@
 import React, {useState, useEffect} from "react";
 
 const Header = () => {
+  const [darkMode, setDarkMode] = useDarkMode(false);
+
+  const toggleMode = e => {
+    e.preventDefault();
+    setDarkMorde(!darkmode);
+  }
 
   return(
     <nav>
